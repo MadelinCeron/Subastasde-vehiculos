@@ -117,6 +117,20 @@ test('autenticación, filtros, edición, reglas de oferta y dos clientes en vivo
   const health = await pedir('/api/salud');
   assert.equal(health.status, 200);
 
+  for (const [id, ruta] of [
+    [1, '/images/demo/2018-ford-mustang-gt/'],
+    [2, '/images/demo/2020-toyota-rav4-adventure/']
+  ]) {
+    const demo = (await pedir(`/api/vehiculos/${id}`)).data.vehiculo;
+    assert.equal(demo.fotos.length, 5);
+    assert.equal(new Set(demo.fotos).size, 5);
+    assert.ok(demo.fotos.every((foto) => foto.startsWith(ruta)));
+    const placeholder = await fetch(origen + demo.fotos[0]);
+    assert.equal(placeholder.status, 200);
+    assert.match(placeholder.headers.get('content-type'), /image\/svg\+xml/);
+    assert.match(await placeholder.text(), /FOTO REAL PENDIENTE/);
+  }
+
   const a = await crearCuenta('CompradorA');
   const b = await crearCuenta('CompradorB');
   const login = await pedir('/api/auth/login', { method: 'POST', body: { correo: a.correo, password: a.password } });

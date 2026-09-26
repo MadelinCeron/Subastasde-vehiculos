@@ -11,18 +11,18 @@ const cuentas = [
 
 const imagenesPorModelo = {
   'Mustang GT': [
-    'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1500&q=85'
+    '/images/demo/2018-ford-mustang-gt/01-front-left.jpg',
+    '/images/demo/2018-ford-mustang-gt/02-left-side.jpg',
+    '/images/demo/2018-ford-mustang-gt/03-front-right.jpg',
+    '/images/demo/2018-ford-mustang-gt/04-rear.jpg',
+    '/images/demo/2018-ford-mustang-gt/05-interior.jpg'
   ],
   'RAV4 Adventure': [
-    'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?auto=format&fit=crop&w=1500&q=85',
-    'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1500&q=85'
+    '/images/demo/2020-toyota-rav4-adventure/01-front-left.jpg',
+    '/images/demo/2020-toyota-rav4-adventure/02-left-side.jpg',
+    '/images/demo/2020-toyota-rav4-adventure/03-front-right.jpg',
+    '/images/demo/2020-toyota-rav4-adventure/04-rear.jpg',
+    '/images/demo/2020-toyota-rav4-adventure/05-interior.jpg'
   ]
 };
 
